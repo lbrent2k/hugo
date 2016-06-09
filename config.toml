@@ -1,0 +1,10 @@
+baseurl = "/"
+languageCode = "en-us"
+theme = "hyde"
+title = "No Servers!"
+newContentEditor = "nano"
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+[params]
+  description = "Living the no server lifestyle."

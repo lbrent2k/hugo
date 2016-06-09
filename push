@@ -1,0 +1,14 @@
+#!/bin/bash
+
+set -e
+
+echo -e "\t Removing public directory"
+rm -r public/
+
+echo -e "\t Building site..."
+hugo
+echo -e "\t Successfully generated site"
+
+aws s3 sync public/ s3://serverno.com
+echo -e "\t Successfully deployed to S3"
+
